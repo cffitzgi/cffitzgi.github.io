@@ -1,14 +1,119 @@
-<!DOCTYPE HTML>
-<!--
-	Howdy nerd, fancy seeing you here lol
--->
-<html>
-	<head>
-		<title>Guitar Lessons</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="refresh" content="0; url=lessons.html" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashel Fox | Artist • Writer • Musician</title>
+    <link rel="stylesheet" href="./src/styles/base.css">
+    <link rel="stylesheet" href="./src/styles/components.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    <link rel="stylesheet" href="./src/styles/modules/music.css">
+    <link rel="stylesheet" href="./src/styles/modules/writing.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Art</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="fade-in">Cashel Fox</h1>
+                <p class="subtitle fade-in">Artist • Writer • Musician</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Visual Art</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5" alt="Impressionist landscape">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1549887534-1541e9326642" alt="Abstract painting">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9" alt="Color study">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="writing" class="writing">
+            <div class="container">
+                <h2>Written Works</h2>
+                <div class="writing-grid">
+                    <div class="writing-item">
+                        <h3>The Silent Echo</h3>
+                        <p class="writing-excerpt">"In the depths of winter, when the snow falls like memories..."</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="writing-item">
+                        <h3>Chromatic Dreams</h3>
+                        <p class="writing-excerpt">"Colors dance across the canvas of consciousness..."</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="writing-item">
+                        <h3>Urban Rhythms</h3>
+                        <p class="writing-excerpt">"The city breathes in syncopated beats..."</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="music">
+            <div class="container">
+                <h2>Musical Compositions</h2>
+                <div class="music-grid">
+                    <div class="music-item">
+                        <h3>Autumn Leaves</h3>
+                        <p>A piano piece inspired by falling leaves</p>
+                        <div class="audio-player">
+                            <button class="play-btn">Play</button>
+                            <audio src="https://example.com/autumn-leaves.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="music-item">
+                        <h3>Urban Symphony</h3>
+                        <p>Electronic composition featuring city sounds</p>
+                        <div class="audio-player">
+                            <button class="play-btn">Play</button>
+                            <audio src="https://example.com/urban-symphony.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cashel Fox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
 </html>

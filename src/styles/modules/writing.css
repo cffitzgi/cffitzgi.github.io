@@ -1,0 +1,30 @@
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.writing-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.writing-excerpt {
+  font-style: italic;
+  color: var(--color-text);
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.read-more {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

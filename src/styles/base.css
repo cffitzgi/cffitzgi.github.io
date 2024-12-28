@@ -1,0 +1,28 @@
+:root {
+  --color-bg: #f8f9fa;
+  --color-text: #2c3e50;
+  --color-primary: #34495e;
+  --color-accent: #e74c3c;
+  --color-light: #ecf0f1;
+  --spacing-unit: 1rem;
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
